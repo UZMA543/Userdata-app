@@ -1,9 +1,11 @@
-import Counter from "./components/Counter";
+import StatusToggle from "./components/StatusToggle.jsx";
 
 export default function App() {
-  return <Counter />;
+  return (
+    <>
+      <StatusToggle />
+    </>
+  );
 }
-
-
 
 
