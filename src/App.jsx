@@ -1,11 +1,35 @@
-import StatusToggle from "./components/StatusToggle.jsx";
+import { useState } from "react";
 
-export default function App() {
+function App() {
+  const [isRed, setIsRed] = useState(true);
+
   return (
-    <>
-      <StatusToggle />
-    </>
+    <div style={{ padding: "20px" }}>
+      
+      <div
+        style={{
+          width: "200px",
+          height: "100px",
+          backgroundColor: isRed ? "red" : "blue",
+          color: "white",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginBottom: "10px"
+        }}
+      >
+        Color Box
+      </div>
+
+      <button onClick={() => setIsRed(!isRed)}>
+        Change Color
+      </button>
+
+    </div>
   );
 }
+
+export default App;
+
 
 
