@@ -1,12 +1,9 @@
-import UserData from "./components/UserData";
+import Counter from "./components/Counter";
 
-function App() {
-  return (
-    <div>
-      <UserData />
-    </div>
-  );
+export default function App() {
+  return <Counter />;
 }
 
-export default App;
+
+
 
